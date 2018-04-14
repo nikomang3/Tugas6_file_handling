@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Form Input Buku Telepon</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+          #judul1{
+                  text-align: center; 
+          }
+          #isi1{
+                  background-color: lightgray;
+                  padding: 10px;
+          }
+  </style>
+</head>
+    <body>
+        <div class="container">
+                <div class="col-md-6 col-sm-6" id="isi1">
+                        <h3 id="judul1">Form Input Data Buku Telepon</h3><br>
+                        <form action="insert.php" method="POST">
+                                <label class="col-md-2 col-sm-3 col-xs-3" for="">Nama: </label>
+                                <input  type="text" name="nama" required><br>
+                                <label class="col-md-2 col-sm-3 col-xs-3" for="">Email: </label>
+                                <input type="email" name="email"><br>
+                                <label class="col-md-2 col-sm-3 col-xs-3" for="">Telepon: </label>
+                                <input type="tel" name="phone" required><br>
+                                <label class="col-md-2 col-sm-3 col-xs-3" for="">Alamat: </label>
+                                <input type="text" name="alamat" ><br><br>
+                                <input type="submit" class="btn btn-primary" value="Simpan">
+                        </form>
+                </div>
+        </div>
+        
+    </body>
+</html>
